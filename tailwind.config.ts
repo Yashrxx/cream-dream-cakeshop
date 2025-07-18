@@ -52,12 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				/* Cake N Cream Theme Colors */
-				'pink-light': 'hsl(var(--pink-light))',
-				'pink-medium': 'hsl(var(--pink-medium))',
-				'pink-dark': 'hsl(var(--pink-dark))',
+				/* Elegant Theme Colors */
 				'cream': 'hsl(var(--cream))',
 				'gold': 'hsl(var(--gold))',
+				'gold-dark': 'hsl(var(--gold-dark))',
+				'charcoal': 'hsl(var(--charcoal))',
+				'charcoal-light': 'hsl(var(--charcoal-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -112,12 +112,14 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-button': 'var(--gradient-button)'
+				'gradient-button': 'var(--gradient-button)',
+				'gradient-accent': 'var(--gradient-accent)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'card': 'var(--shadow-card)',
-				'button': 'var(--shadow-button)'
+				'button': 'var(--shadow-button)',
+				'elegant': 'var(--shadow-elegant)'
 			}
 		}
 	},

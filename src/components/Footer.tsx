@@ -5,38 +5,38 @@ import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary/30 border-t border-border">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <footer className="bg-gradient-card border-t border-border/20 shadow-elegant">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-button rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">🧁</span>
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3">
+              <div className="w-12 h-12 bg-gradient-button rounded-xl flex items-center justify-center shadow-button">
+                <span className="text-primary-foreground font-bold text-lg">🧁</span>
               </div>
-              <span className="font-bold text-xl text-foreground">Cake N Cream</span>
+              <span className="font-bold text-2xl text-foreground tracking-tight">Cake N Cream</span>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Crafting delicious moments with our premium cakes and desserts. 
-              Made fresh daily with love and the finest ingredients.
+            <p className="text-muted-foreground leading-relaxed">
+              Crafting exquisite moments with our artisan cakes and confections. 
+              Made fresh daily with passion and the finest premium ingredients.
             </p>
-            <div className="flex space-x-2">
-              <Button variant="ghost" size="icon" className="hover:bg-accent hover:text-primary">
-                <Facebook className="h-4 w-4" />
+            <div className="flex space-x-3">
+              <Button variant="ghost" size="icon" className="hover:bg-accent/50 hover:text-gold transition-all duration-300 rounded-xl">
+                <Facebook className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-accent hover:text-primary">
-                <Instagram className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="hover:bg-accent/50 hover:text-gold transition-all duration-300 rounded-xl">
+                <Instagram className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-accent hover:text-primary">
-                <Twitter className="h-4 w-4" />
+              <Button variant="ghost" size="icon" className="hover:bg-accent/50 hover:text-gold transition-all duration-300 rounded-xl">
+                <Twitter className="h-5 w-5" />
               </Button>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Quick Links</h3>
-            <div className="space-y-2">
+          <div className="space-y-6">
+            <h3 className="font-bold text-lg text-foreground">Quick Links</h3>
+            <div className="space-y-3">
               {[
                 { name: "About Us", path: "/about" },
                 { name: "Our Products", path: "/products" },
@@ -47,7 +47,7 @@ const Footer = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="block text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="block text-muted-foreground hover:text-gold transition-colors duration-300 font-medium"
                 >
                   {link.name}
                 </Link>
@@ -56,9 +56,9 @@ const Footer = () => {
           </div>
 
           {/* Customer Service */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Customer Service</h3>
-            <div className="space-y-2">
+          <div className="space-y-6">
+            <h3 className="font-bold text-lg text-foreground">Customer Service</h3>
+            <div className="space-y-3">
               {[
                 { name: "FAQ", path: "/faq" },
                 { name: "Shipping Info", path: "/shipping" },
@@ -69,7 +69,7 @@ const Footer = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="block text-muted-foreground hover:text-primary transition-colors text-sm"
+                  className="block text-muted-foreground hover:text-gold transition-colors duration-300 font-medium"
                 >
                   {link.name}
                 </Link>
@@ -78,27 +78,27 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Contact Us</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-2 text-sm">
-                <MapPin className="h-4 w-4 text-primary" />
+          <div className="space-y-6">
+            <h3 className="font-bold text-lg text-foreground">Contact Us</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-gold" />
                 <span className="text-muted-foreground">
                   123 Sweet Street, Bakery District, City 12345
                 </span>
               </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4 text-primary" />
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-gold" />
                 <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm">
-                <Mail className="h-4 w-4 text-primary" />
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-gold" />
                 <span className="text-muted-foreground">hello@cakeandcream.com</span>
               </div>
             </div>
-            <div className="bg-accent p-3 rounded-lg">
-              <p className="text-sm font-medium text-foreground">Store Hours</p>
-              <p className="text-xs text-muted-foreground mt-1">
+            <div className="bg-gradient-accent p-4 rounded-xl shadow-soft">
+              <p className="font-bold text-foreground mb-2">Store Hours</p>
+              <p className="text-sm text-muted-foreground">
                 Mon-Sat: 8AM - 8PM<br />
                 Sunday: 9AM - 6PM
               </p>
@@ -108,18 +108,18 @@ const Footer = () => {
 
         <Separator className="my-8" />
 
-        <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-          <p className="text-sm text-muted-foreground">
+        <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
+          <p className="text-muted-foreground font-medium">
             © 2024 Cake N Cream. All rights reserved.
           </p>
-          <div className="flex space-x-4 text-sm text-muted-foreground">
-            <Link to="/privacy" className="hover:text-primary transition-colors">
+          <div className="flex space-x-6 text-muted-foreground">
+            <Link to="/privacy" className="hover:text-gold transition-colors duration-300 font-medium">
               Privacy
             </Link>
-            <Link to="/terms" className="hover:text-primary transition-colors">
+            <Link to="/terms" className="hover:text-gold transition-colors duration-300 font-medium">
               Terms
             </Link>
-            <Link to="/cookies" className="hover:text-primary transition-colors">
+            <Link to="/cookies" className="hover:text-gold transition-colors duration-300 font-medium">
               Cookies
             </Link>
           </div>

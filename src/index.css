@@ -8,51 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cake N Cream Design System - Light Pink Theme */
-    --background: 350 40% 98%;
-    --foreground: 340 8% 20%;
+    /* Elegant Dark Theme - Sophisticated Design System */
+    --background: 240 10% 3.9%;
+    --foreground: 35 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 340 8% 20%;
+    --card: 240 10% 6%;
+    --card-foreground: 35 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 340 8% 20%;
+    --popover: 240 10% 6%;
+    --popover-foreground: 35 20% 95%;
 
-    --primary: 340 65% 75%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 35 75% 65%;
+    --primary-foreground: 240 15% 10%;
 
-    --secondary: 340 30% 95%;
-    --secondary-foreground: 340 8% 20%;
+    --secondary: 240 15% 12%;
+    --secondary-foreground: 35 20% 85%;
 
-    --muted: 340 20% 96%;
-    --muted-foreground: 340 8% 45%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 64%;
 
-    --accent: 350 50% 90%;
-    --accent-foreground: 340 8% 20%;
+    --accent: 35 45% 25%;
+    --accent-foreground: 35 20% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 340 20% 92%;
-    --input: 340 20% 96%;
-    --ring: 340 65% 75%;
+    --border: 240 15% 15%;
+    --input: 240 15% 12%;
+    --ring: 35 75% 65%;
 
-    /* Custom Cake Theme Colors */
-    --pink-light: 340 60% 95%;
-    --pink-medium: 340 65% 85%;
-    --pink-dark: 340 70% 65%;
-    --cream: 40 30% 96%;
-    --gold: 45 80% 70%;
+    /* Elegant Theme Colors */
+    --cream: 35 35% 92%;
+    --gold: 35 75% 65%;
+    --gold-dark: 35 60% 45%;
+    --charcoal: 240 15% 12%;
+    --charcoal-light: 240 10% 20%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--pink-light)), hsl(var(--cream)));
-    --gradient-card: linear-gradient(135deg, hsl(var(--background)), hsl(var(--pink-light)));
-    --gradient-button: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--pink-dark)));
+    /* Sophisticated Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--charcoal)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--charcoal-light)));
+    --gradient-button: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-dark)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--charcoal)));
 
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
-    --shadow-card: 0 8px 30px hsl(var(--primary) / 0.15);
-    --shadow-button: 0 4px 15px hsl(var(--primary) / 0.3);
+    /* Elegant Shadows */
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
+    --shadow-button: 0 4px 20px hsl(var(--gold) / 0.4);
+    --shadow-elegant: 0 20px 40px hsl(0 0% 0% / 0.5);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

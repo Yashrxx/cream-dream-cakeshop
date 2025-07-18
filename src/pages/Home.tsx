@@ -71,90 +71,92 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroCake} 
-            alt="Hero Cake"
-            className="w-full h-full object-cover opacity-20"
+            alt="Exquisite artisan cake"
+            className="w-full h-full object-cover opacity-30"
           />
+          <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-charcoal/60 to-background/80"></div>
         </div>
         
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 animate-fade-in">
-          <div className="mb-6 animate-float">
-            <span className="inline-block text-6xl mb-4">🧁</span>
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-6 animate-fade-in">
+          <div className="mb-8 animate-float">
+            <span className="inline-block text-7xl mb-6 filter drop-shadow-lg">🧁</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Welcome to
-            <span className="block text-primary">Cake N Cream</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-8 leading-tight tracking-tight">
+            Artisan Elegance
+            <span className="block text-gold bg-gradient-button bg-clip-text text-transparent">Cake N Cream</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Indulge in our handcrafted cakes made with love, premium ingredients, 
-            and years of baking expertise.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Experience the pinnacle of confectionery artistry. Each creation is a masterpiece, 
+            meticulously crafted with premium ingredients and unbounded passion.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
               asChild 
               size="lg" 
-              className="bg-gradient-button hover:scale-105 transition-transform shadow-button text-lg px-8 py-6"
+              className="bg-gradient-button hover:scale-110 transition-all duration-500 shadow-button text-xl px-12 py-8 rounded-xl font-semibold"
             >
               <Link to="/products">
-                Shop Now <ArrowRight className="ml-2 h-5 w-5" />
+                Explore Collection <ArrowRight className="ml-3 h-6 w-6" />
               </Link>
             </Button>
             
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all text-lg px-8 py-6"
+              className="border-gold text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-500 text-xl px-12 py-8 rounded-xl font-semibold"
               asChild
             >
               <Link to="/contact">
-                Custom Orders
+                Bespoke Orders
               </Link>
             </Button>
           </div>
           
-          <div className="mt-12 flex items-center justify-center space-x-8 text-sm text-muted-foreground">
-            <div className="flex items-center space-x-2">
+          <div className="mt-16 flex items-center justify-center space-x-12 text-muted-foreground">
+            <div className="flex items-center space-x-3">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+                  <Star key={i} className="w-5 h-5 fill-gold text-gold" />
                 ))}
               </div>
-              <span>4.9/5 Rating</span>
+              <span className="font-medium">4.9/5 Rating</span>
             </div>
-            <div className="hidden sm:block h-4 w-px bg-border"></div>
-            <span className="hidden sm:inline">1000+ Happy Customers</span>
+            <div className="hidden sm:block h-6 w-px bg-border"></div>
+            <span className="hidden sm:inline font-medium">1000+ Discerning Clients</span>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-secondary/20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose Us?
+      <section className="py-24 bg-gradient-card">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">
+              The Art of Excellence
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We're committed to delivering exceptional quality and unforgettable taste experiences
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Our commitment to perfection is reflected in every aspect of our craft, 
+              from ingredient selection to the final presentation.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {features.map((feature, index) => (
               <div 
                 key={feature.title}
                 className="text-center group animate-fade-in"
-                style={{ animationDelay: `${index * 0.2}s` }}
+                style={{ animationDelay: `${index * 0.3}s` }}
               >
-                <div className="w-16 h-16 bg-gradient-button rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-button">
-                  <feature.icon className="h-8 w-8 text-white" />
+                <div className="w-20 h-20 bg-gradient-button rounded-2xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-button">
+                  <feature.icon className="h-10 w-10 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3">
+                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-gold transition-colors duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-lg">
                   {feature.description}
                 </p>
               </div>
@@ -164,23 +166,24 @@ const Home = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Featured Cakes
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 tracking-tight">
+              Signature Masterpieces
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover our most popular and delicious cake creations
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Discover our most celebrated confections, each one a testament to our 
+              legacy of culinary excellence and artistic innovation.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
             {featuredProducts.map((product, index) => (
               <div 
                 key={product.id}
                 className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <ProductCard 
                   {...product}
@@ -195,10 +198,10 @@ const Home = () => {
               asChild 
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+              className="border-gold text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-500 py-4 px-8 rounded-xl font-semibold text-lg"
             >
               <Link to="/products">
-                View All Products <ArrowRight className="ml-2 h-5 w-5" />
+                Explore Full Collection <ArrowRight className="ml-3 h-6 w-6" />
               </Link>
             </Button>
           </div>
@@ -206,22 +209,24 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Ready to Make Your Day Sweeter?
+      <section className="py-24 bg-gradient-hero relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-charcoal/80 to-background/90"></div>
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 tracking-tight">
+              Elevate Your Celebrations
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Browse our collection of handcrafted cakes and place your order today
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+              Discover our curated collection of artisan confections and begin your journey 
+              toward culinary excellence today.
             </p>
             <Button 
               asChild 
               size="lg"
-              className="bg-gradient-button hover:scale-105 transition-transform shadow-button text-lg px-8 py-6"
+              className="bg-gradient-button hover:scale-110 transition-all duration-500 shadow-button text-xl px-12 py-8 rounded-xl font-semibold"
             >
               <Link to="/products">
-                Start Shopping <ArrowRight className="ml-2 h-5 w-5" />
+                Begin Your Journey <ArrowRight className="ml-3 h-6 w-6" />
               </Link>
             </Button>
           </div>

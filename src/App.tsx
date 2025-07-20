@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/cream-dream-cakeshop">
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1">
